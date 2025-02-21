@@ -1,0 +1,117 @@
+{
+    "symbols": [
+      {
+        "symbol_id": 1,
+        "symbol_name": "Lotus",
+        "image_url": "https://example.com/lotus.jpg",
+        "type": "Flora",
+        "region": "National",
+        "ideology": "Nationalist",
+        "origin_story": "The lotus represents purity and rebirth in Indian culture.",
+        "cultural_adaptation": "Used by BJP to symbolize their commitment to Indian heritage.",
+        "layers": {
+          "color": "Saffron",
+          "meaning": "Represents Hinduism",
+          "shape": "Lotus",
+          "meaning": "Represents purity",
+          "historical_use": "Ancient Indian art",
+          "meaning": "Symbol of royalty and power"
+        },
+        "creation_year": 1980,
+        "evolution_notes": "Design refined in 1990s to emphasize saffron color for branding."
+      },
+      {
+        "symbol_id": 2,
+        "symbol_name": "Hand",
+        "image_url": "https://example.com/hand.jpg",
+        "type": "Object",
+        "region": "National",
+        "ideology": "Socialist",
+        "origin_story": "The hand symbol was first used by Congress in the 1950s.",
+        "cultural_adaptation": "Represents the party's connection with the common people.",
+        "layers": {
+          "shape": "Hand",
+          "meaning": "Represents labor and working class",
+          "color": "Green",
+          "meaning": "Hope and progress"
+        },
+        "creation_year": 1952,
+        "evolution_notes": "Design updated in 1971 for Garibi Hatao campaign, modernized in 2000s."
+      },
+      {
+        "symbol_id": 3,
+        "symbol_name": "Broom",
+        "image_url": "https://example.com/broom.jpg",
+        "type": "Object",
+        "region": "National",
+        "ideology": "Regionalist",
+        "origin_story": "Chosen by AAP to fight corruption and clean up politics.",
+        "cultural_adaptation": "Represents transparency and good governance.",
+        "layers": {
+          "shape": "Broom",
+          "meaning": "Symbol of cleanliness and renewal",
+          "color": "Green",
+          "meaning": "Environmental focus"
+        },
+        "creation_year": 2012,
+        "evolution_notes": "No major changes, but color palette adjusted in 2014."
+      }
+    ],
+    "parties": [
+      {
+        "party_id": 1,
+        "party_name": "Bharatiya Janata Party (BJP)",
+        "headquarters_address": "New Delhi, India",
+        "founded_year": 1980,
+        "key_milestones": {"1977": "Formation as Janata Party faction", "1980": "Adopts Lotus symbol", "2014": "National election victory"}
+      },
+      {
+        "party_id": 2,
+        "party_name": "Indian National Congress (INC)",
+        "headquarters_address": "New Delhi, India",
+        "founded_year": 1885,
+        "key_milestones": {"1971": "Garibi Hatao campaign with Hand symbol", "1984": "Rajiv Gandhi leadership", "2004": "Modern branding of Hand"}
+      },
+      {
+        "party_id": 3,
+        "party_name": "Aam Aadmi Party (AAP)",
+        "headquarters_address": "New Delhi, India",
+        "founded_year": 2012,
+        "key_milestones": {"2012": "Formation and Broom symbol introduction", "2014": "Delhi election victory"}
+      }
+    ],
+    "timelineEvents": [
+      {
+        "event_id": 1,
+        "party_id": 2,
+        "symbol_id": 2,
+        "year": 1971,
+        "event_description": "Congress emphasizes Hand symbol for Garibi Hatao campaign.",
+        "icon_url": "https://example.com/hand_icon.jpg"
+      },
+      {
+        "event_id": 2,
+        "party_id": 1,
+        "symbol_id": 1,
+        "year": 1980,
+        "event_description": "BJP adopts Lotus as primary symbol.",
+        "icon_url": "https://example.com/lotus_icon.jpg"
+      },
+      {
+        "event_id": 3,
+        "party_id": 3,
+        "symbol_id": 3,
+        "year": 2012,
+        "event_description": "AAP introduces Broom symbol for anti-corruption stance.",
+        "icon_url": "https://example.com/broom_icon.jpg"
+      },
+      {
+        "event_id": 4,
+        "party_id": 2,
+        "symbol_id": 2,
+        "year": 2004,
+        "event_description": "Congress modernizes Hand symbol for digital branding.",
+        "icon_url": "https://example.com/hand_modern_icon.jpg"
+      }
+    ]
+  }

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#symbol-grid, #compare-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.symbol-card, .compare-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#timeline {
+    position: relative;
+    background: linear-gradient(to right, #fff, #000);
+    height: 200px;
+}
+
+#timeline-slider {
+    width: 100%;
+}
+
+#timeline-events {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-event {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+.timeline-event img {
+    width: 50px;
+    height: 50px;
+}
