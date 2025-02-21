@@ -3,63 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Political Symbols of India</title>
+    <title>Political Symbols 3D Soot World</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="#library">Symbol Library</a></li>
-            <li><a href="#compare">Compare Symbols</a></li>
-            <li><a href="#deconstruct">Symbol Deconstructor</a></li>
-            <li><a href="#timeline">Party Evolution Timeline</a></li>
+            <li><a href="#explore">Explore Symbols</a></li>
+            <li><a href="#search">Search & Filter</a></li>
         </ul>
     </nav>
 
-    <section id="library">
-        <h2>Symbol Library</h2>
-        <div id="symbol-grid"></div>
+    <section id="explore">
+        <h2>Political Symbols 3D Soot World</h2>
+        <div id="soot-3d"></div>
     </section>
 
-    <section id="compare">
-        <h2>Compare Symbols</h2>
-        <select id="symbol-filter-type">
+    <section id="search">
+        <h2>Search Symbols</h2>
+        <input type="text" id="search-input" placeholder="Search by color, shape, or ideology...">
+        <select id="filter-type">
             <option value="">All Types</option>
             <option value="Flora">Flora</option>
             <option value="Object">Objects</option>
             <option value="Animal">Animals</option>
         </select>
-        <select id="symbol-filter-region">
-            <option value="">All Regions</option>
-            <option value="National">National</option>
-            <option value="North">North</option>
-            <option value="South">South</option>
-            <option value="East">East</option>
-            <option value="West">West</option>
-        </select>
-        <select id="symbol-filter-ideology">
+        <select id="filter-ideology">
             <option value="">All Ideologies</option>
             <option value="Nationalist">Nationalist</option>
             <option value="Socialist">Socialist</option>
             <option value="Regionalist">Regionalist</option>
         </select>
-        <div id="compare-grid"></div>
     </section>
 
-    <section id="deconstruct">
-        <h2>Symbol Deconstructor</h2>
-        <select id="deconstruct-symbol">
-            <option value="">Select a Symbol</option>
-        </select>
-        <div id="deconstruct-details"></div>
-    </section>
-
-    <section id="timeline">
-        <h2>Party Evolution Timeline</h2>
-        <input type="range" id="timeline-slider" min="1950" max="2025" value="1950">
-        <div id="timeline-events"></div>
-    </section>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
