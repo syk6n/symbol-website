@@ -1,13 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('Script loaded, starting fetch for data.json');
     fetch('data.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
+            console.log('Data loaded successfully:', data);
             const symbols = data.symbols;
             const scene = new THREE.Scene();
             const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
             const renderer = new THREE.WebGLRenderer();
             renderer.setSize(window.innerWidth * 0.9, window.innerHeight * 0.8);
             document.getElementById('soot-3d').appendChild(renderer.domElement);
+
+            console.log('Scene, camera, and renderer initialized');
 
             // Add lights
             const ambientLight = new THREE.AmbientLight(0x404040);
@@ -20,14 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {
             const textureLoader = new THREE.TextureLoader();
             const texturePromises = symbols.map(symbol => {
                 return new Promise((resolve, reject) => {
+                    console.log(`Loading texture for ${symbol.symbol_name} at ${symbol.image_url}`);
                     textureLoader.load(symbol.image_url, texture => {
                         resolve({ symbol_id: symbol.symbol_id, texture });
-                    }, undefined, reject);
+                    }, undefined, error => {
+                        console.error(`Failed to load texture for ${symbol.symbol_name}:`, error);
+                        reject(error);
+                    });
                 });
             });
 
             Promise.all(texturePromises)
                 .then(textureData => {
+                    console.log('All textures loaded successfully:', textureData);
                     const textures = {};
                     textureData.forEach(data => {
                         textures[data.symbol_id] = data.texture;
@@ -35,6 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     // Now create 3D objects for symbols
                     const symbolObjects = symbols.map(symbol => {
+                        if (!textures[symbol.symbol_id]) {
+                            console.warn(`No texture for ${symbol.symbol_name}, using default material`);
+                            return null; // Skip if texture failed
+                        }
                         const geometry = new THREE.SphereGeometry(0.5, 32, 32);
                         const material = new THREE.MeshBasicMaterial({
                             map: textures[symbol.symbol_id],
@@ -45,7 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         mesh.userData = { symbol: symbol };
                         scene.add(mesh);
                         return mesh;
-                    });
+                    }).filter(obj => obj !== null); // Remove null entries
+
+                    console.log('3D objects created:', symbolObjects);
 
                     // Physics simulation for spatial layout (simple repulsion)
                     function updatePositions() {
@@ -70,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Camera controls
                     camera.position.z = 15;
                     const controls = new THREE.OrbitControls(camera, renderer.domElement);
+                    console.log('Camera controls initialized');
 
                     // Add details popup
                     const details = d3.select('body').append('div')
@@ -141,6 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 obj.visible = false;
                             }
                         });
+                        console.log('Filtered and updated symbols:', filtered);
                     }
 
                     searchInput.addEventListener('input', filterAndUpdate);
