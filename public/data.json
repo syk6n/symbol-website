@@ -3,7 +3,7 @@
     {
       "symbol_id": 1,
       "symbol_name": "Lotus",
-      "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D", // Placeholder lotus flower
+      "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D",
       "type": "Flora",
       "region": "National",
       "ideology": "Nationalist",
@@ -23,7 +23,7 @@
     {
       "symbol_id": 2,
       "symbol_name": "Hand",
-      "image_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D", // Placeholder hand gesture
+      "image_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D",
       "type": "Object",
       "region": "National",
       "ideology": "Socialist",
@@ -41,7 +41,7 @@
     {
       "symbol_id": 3,
       "symbol_name": "Broom",
-      "image_url": "https://images.unsplash.com/photo-1563970f8e9f4e3e9c58d2ea7a2b13e8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D", // Placeholder broom
+      "image_url": "https://images.unsplash.com/photo-1563970f8e9f4e3e9c58d2ea7a2b13e8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D",
       "type": "Object",
       "region": "National",
       "ideology": "Regionalist",
@@ -87,7 +87,7 @@
       "symbol_id": 2,
       "year": 1971,
       "event_description": "Congress emphasizes Hand symbol for Garibi Hatao campaign.",
-      "icon_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D" // Placeholder hand icon
+      "icon_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "event_id": 2,
@@ -95,7 +95,7 @@
       "symbol_id": 1,
       "year": 1980,
       "event_description": "BJP adopts Lotus as primary symbol.",
-      "icon_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" // Placeholder lotus icon
+      "icon_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "event_id": 3,
@@ -103,7 +103,7 @@
       "symbol_id": 3,
       "year": 2012,
       "event_description": "AAP introduces Broom symbol for anti-corruption stance.",
-      "icon_url": "https://images.unsplash.com/photo-1563970f8e9f4e3e9c58d2ea7a2b13e8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D" // Placeholder broom icon
+      "icon_url": "https://images.unsplash.com/photo-1563970f8e9f4e3e9c58d2ea7a2b13e8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "event_id": 4,
@@ -111,7 +111,7 @@
       "symbol_id": 2,
       "year": 2004,
       "event_description": "Congress modernizes Hand symbol for digital branding.",
-      "icon_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D" // Placeholder hand icon
+      "icon_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D"
     }
   ]
 }
