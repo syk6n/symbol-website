@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Political Symbols of India (Sootworld Style)</title>
+    <title>Political Symbols 3D Soot World</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#explore">Explore Symbols</a></li>
+            <li><a href="#search">Search & Filter</a></li>
+        </ul>
+    </nav>
 
-    <header>
-        <h1>Symbol World</h1>  <!--  Replace with your title  -->
-        <input type="text" id="search-box" placeholder="Search symbols...">  <!-- Simplified -->
-    </header>
+    <section id="explore">
+        <h2>Political Symbols 3D Soot World</h2>
+        <div id="soot-3d"></div>
+    </section>
 
-    <aside>
-        <h2>Categories</h2>
-        <button data-category="overview" class="category-button active">Overview</button>
-        <button data-category="name" class="category-button">Name</button>
-        <button data-category="flora" class="category-button">Flora</button> <!-- Example -->
-        <!-- Add more category buttons here -->
-    </aside>
+    <section id="search">
+        <h2>Search Symbols</h2>
+        <input type="text" id="search-input" placeholder="Search by color, shape, or ideology...">
+        <select id="filter-type">
+            <option value="">All Types</option>
+            <option value="Flora">Flora</option>
+            <option value="Object">Objects</option>
+            <option value="Animal">Animals</option>
+        </select>
+        <select id="filter-ideology">
+            <option value="">All Ideologies</option>
+            <option value="Nationalist">Nationalist</option>
+            <option value="Socialist">Socialist</option>
+            <option value="Regionalist">Regionalist</option>
+        </select>
+    </section>
 
-    <main id="symbol-container">
-        <!-- Symbols will be loaded here -->
-    </main>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
