@@ -1,92 +1,38 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f2f2f2;
-    overflow-x: hidden; /* Hide horizontal scroll */
-}
-
-header {
-    background-color: #fff;
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #000; /* Black background like Soot */
+    color: #fff;
 }
 
-#search-box {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 300px;
-    font-size: 16px;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-aside {
-    width: 200px;
-    background-color: #eee;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-aside h2 {
-    margin-top: 0;
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
-.category-button {
-    display: block;
-    padding: 10px;
-    margin-bottom: 5px;
-    border: none;
-    background-color: #ddd;
-    text-align: left;
-    cursor: pointer;
-    border-radius: 5px;
+#soot-3d {
     width: 100%;
+    height: 80vh;
+    border: 1px solid #fff;
 }
 
-.category-button.active {
-    background-color: #bbb;
-    color: white;
-}
-
-main {
-    margin-left: 240px; /* Adjusted for sidebar width */
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap onto the next line */
-    position: relative; /* Important for absolute positioning of symbols */
-    min-height: 100vh; /* Minimum height to cover the viewport */
-}
-
-/* Individual symbol styling */
-.symbol {
-    position: absolute; /* Absolutely position each symbol */
-    width: 100px; /* Adjust the size as needed */
-    height: 100px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    cursor: grab; /* Indicate draggable */
-    overflow: hidden; /* Clip overflowing content */
-}
-
-.symbol img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure images fill the container */
-}
-
-.symbol h3 {
-    font-size: 14px;
-    margin: 5px;
-    text-align: center;
-}
-
-/* Styling for dragging */
-.symbol.dragging {
-    opacity: 0.5;
+.details {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    display: none;
 }
